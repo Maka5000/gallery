@@ -23,7 +23,7 @@ main {
     display: flex;
     width: 100%;
     height: 100%;   
-    background-color: #bbbbbb;
+    background-color: #5e5b5b;
     transition: .3s ease-in-out;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@ main {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #bfe3b4;
+    background-color: #3c9720;
     transition: .3s ease-in-out;
     justify-content: center;
     align-items: center;
@@ -43,7 +43,7 @@ main {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: skyblue;
+    background-color: rgb(48, 151, 192);
     transition: .3s ease-in-out;
     justify-content: center;
     align-items: center;
@@ -93,8 +93,10 @@ main {
 .left-up-arrow {
     position: absolute;
     background-image: url("./assets/icons/arrow-up.svg");
-    background-size: cover;
-    background-color: #7c7c7c;
+    background-size: 70%;
+    background-color: #383737;
+    background-repeat: no-repeat;
+    background-position: center;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: none;
@@ -103,15 +105,12 @@ main {
     z-index: 1;
     width: 50px;
     height: 50px;
-    filter: invert(100%);
-    box-shadow: 0 0 5px gray;
-    opacity: 60%;
     transition: .2s ease-in-out all;
+    filter: invert(100%);
 }
 
 .left-up-arrow:hover {
     cursor: pointer;
-    opacity: 100%;
 }
 
 .right-panel {
@@ -121,25 +120,24 @@ main {
 .right-down-arrow {
     position: absolute;
     background-image: url("./assets/icons/arrow-down.svg");
-    background-size: cover;
-    background-color: #7c7c7c;
+    background-size: 70%;
+    background-color: #383737;
+    background-repeat: no-repeat;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    background-position: center;
     border: none;
     left: 0;
     top: 48%;
     z-index: 1;
     width: 50px;
     height: 50px;
-    filter: invert(100%);
-    box-shadow: 0 0 5px gray;
-    opacity: 60%;
     transition: .2s ease-in-out all;
+    filter: invert(100%);
 }
 
 .right-down-arrow:hover {
     cursor: pointer;
-    opacity: 100%;
 }
 
 .github {

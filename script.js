@@ -18,8 +18,25 @@ window.onload = () => {
         }
     });
 
-    buttonUp.addEventListener('click', moveUp);
-    buttonDown.addEventListener('click', moveDown);
+    buttonUp.addEventListener('click', () => {
+        moveUp();
+
+        buttonUp.style.transform = "scale(1.1)";
+
+        setTimeout(() => {
+            buttonUp.style.transform = "";
+        }, 400)
+    });
+
+    buttonDown.addEventListener('click', () => {
+        moveDown();
+
+        buttonDown.style.transform = "scale(1.1)";
+
+        setTimeout(() => {
+            buttonDown.style.transform = "";
+        }, 400)
+    });
     
     function moveDown() {
         if(!gray.style.transform && !image1.style.transform) {
